@@ -1,0 +1,1153 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+p,
+a,
+h2 {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+p {
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+a p {
+  display: inline;
+}
+.underlined {
+  border-bottom: solid 3px;
+}
+.clear {
+  clear: both;
+}
+button {
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  padding: 0;
+}
+button:hover {
+  border-bottom: solid 3px;
+}
+button:active {
+  color: black;
+}
+.container-fluid {
+  padding: 20px;
+}
+header {
+  width: 100%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+header .header__logo {
+  margin-top: 20px;
+  width: 210px;
+  position: absolute;
+  z-index: 11;
+}
+header .header__logo a:hover {
+  border-bottom: none;
+}
+header .header__projectTitle {
+  display: none;
+  float: left;
+  margin-left: 110px;
+  position: fixed;
+  margin-top: 20px;
+  z-index: 3;
+}
+header .header__contact {
+  display: none;
+  z-index: 3;
+}
+@media only screen and (min-width : 768px) {
+  header .header__contact {
+    position: fixed;
+    right: 20px;
+    margin-top: 20px;
+  }
+}
+header .navIcon {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 4%;
+  top: 20px;
+  z-index: 10;
+}
+header .navIcon .navIconItem {
+  height: 3px;
+  width: 40px;
+  background-color: black;
+  display: block;
+  margin-bottom: 6px;
+}
+header .navIcon.active .navIconItem_1 {
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+header .navIcon.active .navIconItem_2 {
+  visibility: hidden;
+}
+header .navIcon.active .navIconItem_3 {
+  transform: rotate(-45deg);
+  transform-origin: 0 0;
+  margin-top: 15px;
+  margin-left: 4px;
+}
+header .navFull {
+  display: none;
+  padding-top: 200px;
+  padding-left: 20px;
+}
+header .navFull a {
+  margin-bottom: 5px;
+  line-height: 2em;
+}
+header .navFull .link--active {
+  border-bottom: solid 3px;
+}
+header .navFull.active {
+  width: 100%;
+  display: block;
+  position: fixed;
+  z-index: 9;
+  right: 0%;
+  height: 100%;
+  background-color: white;
+}
+@media only screen and (min-width : 768px) {
+  header .navFull.active {
+    width: 30%;
+    margin-left: 5%;
+  }
+}
+header .navFull.active a {
+  margin-left: 20px;
+}
+@media only screen and (min-width : 768px) {
+  header .navFull.active a {
+    margin-left: 0;
+  }
+}
+header .navFull.active a:hover,
+header .navFull.active a:focus {
+  border-bottom: solid 3px;
+}
+header .navFull .sprachen {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+@media only screen and (min-width : 768px) {
+  header .navFull .sprachen {
+    margin-left: 0px;
+  }
+}
+header .navFull .sprachen button {
+  margin-right: 5px;
+}
+header .navFull .contact {
+  margin-top: 20%;
+  margin-left: 20px;
+}
+@media only screen and (min-width : 768px) {
+  header .navFull .contact {
+    margin-left: 0px;
+  }
+}
+.en {
+  display: none;
+}
+.en.active {
+  display: block;
+}
+.fr {
+  display: block;
+}
+.fr.active {
+  display: none;
+}
+.de {
+  display: none;
+}
+.french:hover,
+.english:hover,
+.french:focus,
+.english:focus {
+  border-bottom: solid 3px;
+}
+.french.active,
+.english.active {
+  border-bottom: solid 3px;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+.arrorw--down {
+  width: 7%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1%;
+  z-index: 3;
+  left: 46.5%;
+}
+section {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  /*background-size: 100% auto;*/
+  position: relative;
+}
+section .svgContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+section .text {
+  margin-top: 200px;
+  width: 100%;
+}
+@media only screen and (min-width : 768px) {
+  section .text {
+    margin-left: 156px;
+    margin-top: 150px;
+    width: 50%;
+    max-width: 600px;
+  }
+}
+.sectionHeight--auto {
+  height: auto;
+  position: relative;
+}
+.sectionHeight--100 {
+  height: 100%;
+}
+.footer {
+  position: absolute;
+  bottom: 20px;
+  z-index: 11;
+  width: 100%;
+}
+.footer .link--next {
+  display: block;
+  width: auto;
+}
+.footer .next {
+  float: right;
+  width: 10%;
+  width: auto;
+  margin-right: 2%;
+}
+@media only screen and (min-width : 960px) {
+  .footer .next {
+    margin-right: 4%;
+  }
+}
+.footer .last {
+  float: left;
+  width: 10%;
+  width: auto;
+  margin-left: 2%;
+}
+@media only screen and (min-width : 960px) {
+  .footer .last {
+    margin-left: 4%;
+  }
+}
+.video {
+  display: none;
+  width: 100%;
+}
+.video.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  background-color: black;
+}
+.video--close {
+  display: none;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  top: 20px;
+  right: 20px;
+  background-color: black;
+}
+.video--close.active {
+  display: block;
+}
+.video--close .videoItem {
+  display: block;
+  background-color: white;
+  height: 5px;
+  width: 40px;
+  margin-top: 17px;
+}
+.video--close .videoItem--1 {
+  transform: rotate(45deg);
+}
+.video--close .videoItem--2 {
+  transform: rotate(315deg);
+  margin-top: -5px;
+}
+button img {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+button:hover {
+  border-bottom: none;
+}
+.play {
+  position: relative;
+  width: 15%;
+  margin-left: 36%;
+  z-index: 5;
+  display: block;
+  margin-top: -50%;
+}
+@media only screen and (min-width : 768px) {
+  .play {
+    width: 10%;
+    margin-left: 40%;
+    margin-top: -40%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .play {
+    width: 5%;
+    margin-left: 45%;
+    margin-top: -30%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .play {
+    width: 5%;
+    margin-left: 45%;
+  }
+}
+.dexter {
+  background-color: #df8f97;
+}
+.dexter .svgContainer img {
+  position: absolute;
+}
+.dexter .first {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  height: 100%;
+}
+.dexter .first .boot {
+  width: 30%;
+  margin-top: -16.5%;
+  right: 15%;
+}
+.dexter .first .stadt {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: -41%;
+}
+.dexter .first .welle {
+  width: 110%;
+  height: auto;
+  margin-left: -5%;
+}
+.dexter .first .welle1 {
+  bottom: -5px;
+}
+@media only screen and (min-width : 768px) {
+  .dexter .first .welle1 {
+    bottom: -14px;
+  }
+}
+.dexter .first .welle2 {
+  margin-top: -16%;
+}
+.dexter .first .welle3 {
+  margin-top: -22%;
+}
+.dexter .second {
+  position: relative;
+  overflow: hidden;
+}
+.dexter .second .unterwasser {
+  bottom: 0;
+  transform: scale(1.02);
+}
+.dexter .second .sack_klein {
+  width: 8%;
+  right: 24%;
+  margin-top: -25%;
+}
+.dexter .second .luft {
+  bottom: 250px;
+  right: 29%;
+  width: 1.5%;
+}
+.dexter .second .sack_gross {
+  width: 20%;
+  margin-left: 22%;
+  margin-top: -26%;
+}
+.shithappens section .papier {
+  width: 350px;
+  background-color: white;
+  position: absolute;
+}
+.shithappens section .text {
+  width: 90%;
+  right: 5%;
+  position: absolute;
+  z-index: 8;
+  top: 180%;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width : 768px) {
+  .shithappens section .text {
+    background-color: transparent;
+    padding: 0;
+    top: 178%;
+    width: 50%;
+    right: 2%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .shithappens section .text {
+    right: 10%;
+  }
+}
+.shithappens section .papier_sechseck {
+  display: none;
+}
+@media only screen and (min-width : 768px) {
+  .shithappens section .papier_sechseck {
+    display: block;
+    left: 20%;
+    top: 30%;
+  }
+}
+.shithappens section .papier_lang {
+  left: -30%;
+  top: 150px;
+}
+@media only screen and (min-width : 768px) {
+  .shithappens section .papier_lang {
+    left: 0%;
+    z-index: -3;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .shithappens section .papier_lang {
+    left: 10%;
+  }
+}
+.shithappens section .papier_rosen {
+  top: 12%;
+  z-index: 1;
+  right: 22%;
+}
+@media only screen and (min-width : 768px) {
+  .shithappens section .papier_rosen {
+    right: 12%;
+    z-index: -3;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .shithappens section .papier_rosen {
+    right: 26%;
+    top: 6%;
+  }
+}
+.shithappens section .papier_punkte {
+  z-index: -3;
+  top: 45%;
+  right: 0;
+}
+@media only screen and (min-width : 768px) {
+  .shithappens section .papier_punkte {
+    right: 5%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .shithappens section .papier_punkte {
+    right: 8%;
+    top: 50%;
+  }
+}
+.shithappens section .papier_weissKlein {
+  right: 0%;
+  top: -20%;
+}
+@media only screen and (min-width : 960px) {
+  .shithappens section .papier_weissKlein {
+    right: 0%;
+    top: -30%;
+  }
+}
+.shithappens section .papier_rauteRaute {
+  display: none;
+}
+@media only screen and (min-width : 768px) {
+  .shithappens section .papier_rauteRaute {
+    display: block;
+    top: 245%;
+    left: 20%;
+    z-index: 1;
+  }
+}
+.shithappens section .papier_8 {
+  top: 230%;
+}
+.shithappens section .foto {
+  width: 100%;
+  position: absolute;
+}
+.shithappens section .cover {
+  width: 300px;
+  right: 5%;
+  z-index: 4;
+}
+@media only screen and (min-width : 768px) {
+  .shithappens section .cover {
+    right: 15%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .shithappens section .cover {
+    top: 0%;
+    right: 30%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .shithappens section .cover {
+    top: 0%;
+    right: 23%;
+  }
+}
+.shithappens section .foto_1 {
+  width: 70%;
+  left: 5%;
+  top: 115%;
+}
+@media only screen and (min-width : 768px) {
+  .shithappens section .foto_1 {
+    top: 130%;
+    left: 5%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .shithappens section .foto_1 {
+    width: 40%;
+    left: 20%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .shithappens section .foto_1 {
+    left: 24%;
+    width: 35%;
+  }
+}
+.shithappens section video {
+  width: 90%;
+  margin-left: 5%;
+  position: absolute;
+  z-index: 5;
+  right: 5%;
+  top: 245%;
+}
+@media only screen and (min-width : 768px) {
+  .shithappens section video {
+    top: 235%;
+    width: 70%;
+    right: 10%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .shithappens section video {
+    width: 50%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .shithappens section video {
+    width: 42%;
+    right: 18%;
+  }
+}
+.shithappens section .text_blog {
+  position: absolute;
+  top: 320%;
+  font-size: 1.5em;
+  left: 5%;
+  width: 50%;
+  margin-bottom: 10%;
+}
+@media only screen and (min-width : 768px) {
+  .shithappens section .text_blog {
+    top: 300%;
+    width: 30%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .shithappens section .text_blog {
+    left: auto;
+    width: 20%;
+    right: 45%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .shithappens section .text_blog {
+    width: 20%;
+    right: 40%;
+  }
+}
+.shithappens section .text_blog a {
+  border-bottom: solid 3px;
+}
+.shithappens section .text_blog a:hover {
+  border-bottom: solid 3px red;
+}
+.shithappens section .papier_blumen {
+  right: 2%;
+  top: 250%;
+  z-index: -1;
+}
+.shithappens section .footer {
+  position: absolute;
+  bottom: -240%;
+  padding-bottom: 20px;
+}
+@media only screen and (min-width : 1200px) {
+  .shithappens section .footer {
+    bottom: -230%;
+  }
+}
+.ils {
+  background-color: #bde2ee;
+}
+.ils .svgContainer img {
+  position: absolute;
+}
+.ils .first {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  overflow: hidden;
+}
+.ils .first .baeume,
+.ils .first .kuh,
+.ils .first .landschaft {
+  bottom: 0;
+}
+.ils .first .rad {
+  width: 13%;
+  bottom: 0;
+  margin-bottom: 8%;
+  right: 44%;
+}
+.ils .first .zug {
+  width: 30%;
+  bottom: 0;
+  margin-bottom: 20%;
+  right: 30%;
+}
+.ils .first .drache {
+  width: 20%;
+  bottom: 0;
+  margin-bottom: 56%;
+  right: 30%;
+}
+.ils .first .windrad {
+  width: 5%;
+  bottom: 0;
+}
+.ils .first .windrad--links {
+  margin-bottom: 41%;
+  right: 22.2%;
+}
+.ils .first .windrad--mitte {
+  margin-bottom: 39.5%;
+  right: 16.4%;
+}
+.ils .first .windrad--rechts {
+  margin-bottom: 41.8%;
+  right: 11.7%;
+}
+.ils .first .kuhkopf {
+  width: 4.5%;
+  bottom: 0;
+  margin-bottom: 16.2%;
+  right: 19.2%;
+}
+.ils .first .wolke {
+  width: 100%;
+  bottom: 0;
+}
+.ils .first .ballon {
+  width: 10%;
+  bottom: 0;
+  margin-bottom: 38%;
+  right: 68%;
+}
+.ils .second {
+  position: relative;
+  overflow: hidden;
+}
+.ils .second .wolke_1 {
+  width: 200%;
+  margin-top: 20%;
+}
+.ils .second .wolke_2 {
+  width: 150%;
+  margin-top: -60%;
+  margin-left: 50%;
+}
+.ils .second .wolke_3 {
+  display: none;
+}
+@media only screen and (min-width : 960px) {
+  .ils .second .wolke_3 {
+    display: block;
+    width: 230%;
+    margin-top: -130%;
+    margin-left: 90%;
+  }
+}
+.ils .second .drache {
+  display: none;
+}
+@media only screen and (min-width : 768px) {
+  .ils .second .drache {
+    display: block;
+    width: 20%;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+  }
+}
+.ils .second .text--bold {
+  position: absolute;
+  top: 65%;
+  font-size: 1.5em;
+  margin-left: 25%;
+}
+.bpb body {
+  background-color: #red;
+}
+.port7 .first {
+  overflow: hidden;
+}
+.port7 .first img {
+  width: 210%;
+  margin-left: -60%;
+  margin-bottom: 20%;
+}
+@media only screen and (min-width : 960px) {
+  .port7 .first img {
+    width: 130%;
+    margin-left: -15%;
+    margin-bottom: -20%;
+  }
+}
+.port7 .first .verwaltung {
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 7%;
+}
+.port7 .footer {
+  bottom: 20px;
+}
+.port7 .second {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+.port7 .second .box {
+  height: auto;
+  padding-bottom: 15%;
+}
+@media only screen and (min-width : 768px) {
+  .port7 .second .box {
+    padding-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 105%;
+  }
+}
+.port7 .second .box .iconbox {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+@media only screen and (min-width : 768px) {
+  .port7 .second .box .iconbox {
+    width: 30%;
+    float: left;
+  }
+}
+.port7 .second .box .iconbox .iconbox--image {
+  opacity: 0;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20%;
+}
+.port7 .second .box .iconbox .iconbox--image.active {
+  opacity: 1;
+}
+.port7 .second .box .iconbox .iconbox--imageHover {
+  opacity: 1;
+  position: absolute;
+  width: 80%;
+  margin-left: -80%;
+  margin-top: 20%;
+}
+.port7 .second .box .iconbox .iconbox--imageHover.active {
+  display: 0;
+}
+.port7 .second .box .iconbox .imagebox--text {
+  text-align: center;
+  text-transform: uppercase;
+  color: #8b644d;
+  letter-spacing: 2px;
+}
+.websites .first {
+  overflow: hidden;
+  background-color: #C5E5E8;
+}
+.websites .first img {
+  position: absolute;
+}
+.websites .first .fenster,
+.websites .first .fenster--nacht {
+  width: 60%;
+  left: -7%;
+  top: 15%;
+}
+@media only screen and (min-width : 768px) {
+  .websites .first .fenster,
+  .websites .first .fenster--nacht {
+    width: 40%;
+    top: 15%;
+    left: 5%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .websites .first .fenster,
+  .websites .first .fenster--nacht {
+    top: 10%;
+    max-width: 370px;
+  }
+}
+.websites .first .fenster--nacht {
+  visibility: hidden;
+}
+.websites .first .fenster--nacht.active {
+  visibility: visible;
+}
+.websites .first .laptop,
+.websites .first .laptop--error {
+  margin-bottom: 14%;
+  bottom: 0;
+  width: 50%;
+  left: 3%;
+}
+@media only screen and (min-width : 768px) {
+  .websites .first .laptop,
+  .websites .first .laptop--error {
+    margin-bottom: 11%;
+    width: 45%;
+    left: 13%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .websites .first .laptop,
+  .websites .first .laptop--error {
+    width: 25%;
+    left: 22%;
+    margin-bottom: 9%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .websites .first .laptop,
+  .websites .first .laptop--error {
+    margin-bottom: 8.8%;
+    left: auto;
+    right: 45%;
+    width: 20%;
+  }
+}
+.websites .first .laptop--error {
+  visibility: hidden;
+}
+.websites .first .laptop--error.active {
+  visibility: visible;
+}
+.websites .first .computer,
+.websites .first .computer--error {
+  display: none;
+  bottom: 0;
+}
+@media only screen and (min-width : 960px) {
+  .websites .first .computer,
+  .websites .first .computer--error {
+    display: block;
+    width: 35%;
+    margin-bottom: 9%;
+    right: 27%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .websites .first .computer,
+  .websites .first .computer--error {
+    margin-bottom: 8.8%;
+    right: 28%;
+    width: 30%;
+  }
+}
+.websites .first .computer--error {
+  visibility: hidden;
+}
+.websites .first .computer--error.active {
+  visibility: visible;
+}
+.websites .first .bild {
+  width: 20%;
+  right: 10%;
+  top: 50%;
+}
+@media only screen and (min-width : 768px) {
+  .websites .first .bild {
+    top: 40%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .websites .first .bild {
+    top: 35%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .websites .first .bild {
+    width: 15%;
+    top: 20%;
+  }
+}
+.websites .first .tisch {
+  bottom: 0;
+  width: 130%;
+  right: 0;
+}
+@media only screen and (min-width : 768px) {
+  .websites .first .tisch {
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 960px) {
+  .websites .first .tisch {
+    width: 80%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .websites .first .tisch {
+    width: 80%;
+  }
+}
+.websites .first .filter {
+  width: 100%;
+  height: 100%;
+  background-color: #4874A8;
+  position: absolute;
+  opacity: 0.3;
+  display: none;
+}
+.websites .first .filter.active {
+  display: block;
+  visibility: visible;
+}
+@media only screen and (min-width : 1200px) {
+  .websites .second {
+    height: 100%;
+  }
+}
+.websites .second .box {
+  height: auto;
+  margin-top: 100px;
+}
+@media only screen and (min-width : 768px) {
+  .websites .second .box {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5%;
+    width: 97%;
+  }
+}
+.websites .second .websitebox {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+@media only screen and (min-width : 768px) {
+  .websites .second .websitebox {
+    margin-top: 80px;
+    width: 46%;
+    float: left;
+    margin-right: 4%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .websites .second .websitebox {
+    margin-top: 80px;
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+  }
+}
+.websites .second .websitebox .websitebox--marginNull {
+  margin-right: 0;
+}
+.websites .second .websitebox .websitebox__headline {
+  font-size: 1em;
+  line-height: 1.5em;
+  float: left;
+}
+.websites .second .websitebox .websitebox__iconbox {
+  float: right;
+  width: 20%;
+}
+.websites .second .websitebox .websitebox__iconbox .websitebox__icon {
+  width: 46%;
+  float: right;
+  margin-left: 4%;
+}
+.websites .second .websitebox .websitebox__image--link:hover {
+  border-bottom: none;
+}
+.websites .second .websitebox .websitebox__image {
+  width: 100%;
+  margin-top: 20px;
+}
+.websites .second .websitebox .websitebox__text {
+  margin-top: 20px;
+}
+.websites .second .websitebox .websitebox__link {
+  margin-top: 20px;
+}
+.bpb .first {
+  overflow-y: hidden;
+  padding-bottom: 5%;
+}
+.bpb .first .daten {
+  margin-top: 25%;
+  width: 180%;
+  margin-left: -40%;
+}
+@media only screen and (min-width : 768px) {
+  .bpb .first .daten {
+    margin-left: 0;
+    width: 110%;
+    margin-top: 30%;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .bpb .first .daten {
+    margin-top: -5%;
+  }
+}
+.bpb .first .text {
+  margin: 0 4%;
+  width: 92%;
+}
+.me .first .foto {
+  width: 100%;
+  margin-top: 20%;
+  position: absolute;
+  bottom: 0;
+}
+.me .first .sprachen {
+  position: absolute;
+  top: 90%;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+@media only screen and (min-width : 768px) {
+  .me .first .sprachen {
+    margin-left: 4%;
+  }
+}
+.me .first .sprachen button {
+  margin-right: 5px;
+}
+.me .text {
+  margin: 0 4%;
+  width: 92%;
+}
+.me .text p {
+  margin-bottom: 20px;
+}
+.me .second {
+  height: auto;
+  padding-bottom: 30px;
+}
+.me .second .text--einleitung {
+  margin-top: 70px;
+}
+@media only screen and (min-width : 960px) {
+  .me .second .text--einleitung {
+    float: left;
+    width: 50%;
+  }
+}
+.me .second .text--erfahrung {
+  margin-top: 70px;
+}
+@media only screen and (min-width : 960px) {
+  .me .second .text--erfahrung {
+    float: left;
+    margin-top: 155px;
+    width: 30%;
+  }
+}
+.impressum {
+  padding: 1% 0;
+}
+.impressum p {
+  margin-bottom: 30px;
+}
+.impressum .back--right {
+  position: fixed;
+  bottom: 2%;
+  right: 4%;
+}
+/*# sourceMappingURL=style_test.css.map */
